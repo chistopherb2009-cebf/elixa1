@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ELIXA — Perfumes artesanales</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#inicio" class="logo" aria-label="ELIXA, inicio">
+      <img src="logo-elixa.jpeg" alt="Logo oficial de ELIXA">
+      <span>ELIXA</span>
+    </a>
+
+    <nav class="links" id="links">
+      <a href="#inicio">Inicio</a>
+      <a href="#coleccion">Perfumes</a>
+      <a href="#test">Encuentra tu aroma</a>
+      <a href="#historia">Nuestra historia</a>
+      <a href="#arte">Ingredientes</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto">Carrito</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Menú">☰</button>
+  </div>
+</header>
+
+<!-- INICIO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="niebla" id="niebla"></div>
+
+  <div class="wrap">
+    <div class="frasco-float" id="heroFloat">
+      <div class="frasco" id="heroFrasco">
+        <span class="halo"></span>
+        <div class="tapa"></div>
+        <div class="cuello"></div>
+        <div class="cuerpo">
+          <span class="brillo"></span>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="reveal">ELIXA</h1>
+
+    <p class="sub reveal">
+      Una esencia. Una historia. Tu identidad.
+    </p>
+
+    <p class="desc reveal">
+      Perfumes artesanales creados para dejar una impresión inolvidable.
+    </p>
+
+    <div class="cta reveal">
+      <a class="btn solid" href="#coleccion">Descubrir la colección</a>
+      <a class="btn" href="#test">Encuentra tu aroma</a>
+    </div>
+  </div>
+</section>
+
+<!-- CUESTIONARIO -->
+<section id="test">
+  <div class="wrap quiz">
+
+    <div id="quizBox">
+      <p class="eyebrow reveal">Encuentra tu aroma</p>
+
+      <div class="progreso">
+        <span class="contador" id="cont">01 / 04</span>
+        <div class="barra">
+          <i id="barra" style="width:25%"></i>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 1 -->
+      <div class="paso activo" data-p="0">
+        <h2 class="pregunta">¿Para quién buscas esta esencia?</h2>
+
+        <div class="opciones" style="grid-template-columns:repeat(2,1fr)">
+          <div class="op" data-v="mujer">Fragancia femenina</div>
+          <div class="op" data-v="hombre">Fragancia masculina</div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 2 -->
+      <div class="paso" data-p="1">
+        <h2 class="pregunta">
+          ¿Qué sensación quieres transmitir cuando llevas tu perfume?
+        </h2>
+
+        <div class="opciones">
+          <div class="op" data-v="elegancia">Elegancia y sofisticación</div>
+          <div class="op" data-v="frescura">Frescura y energía</div>
+          <div class="op" data-v="sensualidad">Sensualidad y misterio</div>
+          <div class="op" data-v="calidez">Calidez y dulzura</div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 3 -->
+      <div class="paso" data-p="2">
+        <h2 class="pregunta">
+          ¿Qué tipo de aromas llaman más tu atención?
+        </h2>
+
+        <div class="opciones">
+          <div class="op" data-v="floral">Flores y pétalos</div>
+          <div class="op" data-v="citrico">Cítricos y frutas</div>
+          <div class="op" data-v="amaderado">Maderas y especias</div>
+          <div class="op" data-v="dulce">Vainilla, ámbar y notas dulces</div>
+        </div>
+      </div>
+
+      <!-- PREGUNTA 4 -->
+      <div class="paso" data-p="3">
+        <h2 class="pregunta">
+          ¿Para qué momento buscas principalmente tu perfume?
+        </h2>
+
+        <div class="opciones">
+          <div class="op" data-v="diario">Todos los días</div>
+          <div class="op" data-v="trabajo">Trabajo y ocasiones especiales</div>
+          <div class="op" data-v="noche">Citas y noches</div>
+          <div class="op" data-v="especial">Momentos especiales</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESULTADO DEL CUESTIONARIO -->
+    <div id="resultado">
+      <p class="res-intro" id="resIntro">
+        Hemos encontrado una esencia que podría hablar de ti.
+      </p>
+
+      <p class="eyebrow">Tu esencia te espera</p>
+
+      <h2 class="titulo" style="text-align:center">
+        TU ESENCIA TE ESPERA
+      </h2>
+
+      <div class="res-card">
+        <div class="res-foto">
+          <div class="frasco" id="resFrasco">
+            <span class="halo"></span>
+            <div class="tapa"></div>
+            <div class="cuello"></div>
+            <div class="cuerpo"></div>
+          </div>
+        </div>
+
+        <div>
+          <p class="eyebrow" id="rFamilia">Familia olfativa</p>
+
+          <h3 id="rNombre"
+              style="font-size:2.6rem;color:var(--marfil);margin:12px 0">
+            —
+          </h3>
+
+          <p class="lead" id="rDesc">Pendiente de configurar.</p>
+
+          <div class="notas" id="rNotas"></div>
+
+          <p class="lead" id="rPorque" style="font-size:.9rem"></p>
+
+          <p class="precio" id="rPrecio">—</p>
+
+          <div class="cta" style="justify-content:flex-start">
+            <a class="btn solid" id="rComprar" href="#contacto">
+              Comprar ahora
+            </a>
+
+            <a class="btn" id="rVer" href="#coleccion">
+              Ver perfume
+            </a>
+          </div>
+
+          <p style="margin-top:26px">
+            <a href="#test" id="reset"
+               style="color:var(--tenue);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase">
+              Volver a hacer el test
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- COLECCIÓN -->
+<section id="coleccion">
+  <div class="wrap">
+    <p class="eyebrow reveal">La colección</p>
+
+    <h2 class="titulo reveal">Colección ELIXA</h2>
+
+    <p class="lead reveal">
+      Cada frasco guarda una composición artesanal irrepetible.
+    </p>
+
+    <div class="fam-tabs" id="genTabs"
+         style="justify-content:flex-start;margin-top:36px">
+      <button class="on" data-g="mujer">Ella — 10 esencias</button>
+      <button data-g="hombre">Él — 10 esencias</button>
+    </div>
+
+    <div class="prods" id="prods"></div>
+
+    <div style="text-align:center;margin-top:64px">
+      <p class="lead" style="margin:0 auto 22px">
+        ¿No sabes cuál elegir?
+      </p>
+
+      <a class="btn solid" href="#test">Haz el test de aroma</a>
+    </div>
+  </div>
+</section>
+
+<!-- INGREDIENTES Y ELABORACIÓN -->
+<section id="arte">
+  <div class="wrap grid2">
+    <div class="media" data-exp>
+      <div class="inner tex t2"></div>
+    </div>
+
+    <div>
+      <p class="eyebrow reveal">El arte de crear</p>
+
+      <h2 class="titulo reveal">
+        El arte detrás de cada aroma
+      </h2>
+
+      <p class="lead reveal">
+        Cada perfume ELIXA nace de una combinación cuidadosamente
+        seleccionada de ingredientes, creatividad y pasión por la perfumería.
+      </p>
+    </div>
+  </div>
+
+  <div class="wrap grid2" style="margin-top:34px">
+    <div class="media" data-exp>
+      <div class="inner tex t3"></div>
+    </div>
+
+    <div class="media" data-exp>
+      <div class="inner tex t4"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMILIAS OLFATIVAS -->
+<section id="familias">
+  <div class="wrap" style="text-align:center">
+    <p class="eyebrow reveal">Experiencia sensorial</p>
+
+    <h2 class="titulo reveal">
+      Explora las familias olfativas
+    </h2>
+
+    <div class="fam-tabs" id="famTabs">
+      <button class="on" data-f="floral">Floral</button>
+      <button data-f="citrico">Cítrico</button>
+      <button data-f="amaderado">Amaderado</button>
+      <button data-f="dulce">Dulce</button>
+    </div>
+
+    <div class="fam-panel">
+      <div class="media" style="height:360px">
+        <div class="inner tex t1" id="famImg"
+             style="height:100%"></div>
+      </div>
+
+      <div style="text-align:left">
+        <h3 id="famTit" style="font-size:2.4rem;color:var(--marfil)">
+          Floral
+        </h3>
+
+        <p class="lead" id="famTxt">
+          Pétalos abiertos al amanecer: una estela luminosa,
+          romántica y envolvente.
+        </p>
+      </div>
+    </div>
+
+    <a class="btn" href="#test" style="margin-top:44px">
+      Descubre tu familia olfativa
+    </a>
+  </div>
+</section>
+
+<!-- NUESTRA HISTORIA -->
+<section id="historia">
+  <div class="wrap grid2">
+    <div>
+      <p class="eyebrow reveal">Nuestra historia</p>
+
+      <h2 class="titulo reveal">
+        Perfume como<br>forma de expresión
+      </h2>
+
+      <p class="lead reveal">
+        ELIXA nace del oficio artesanal: composiciones lentas,
+        materias primas escogidas una a una y la convicción de que
+        un aroma puede decir lo que las palabras no alcanzan.
+      </p>
+
+      <p class="lead reveal">
+        No creamos fragancias para todos. Creamos esencias para alguien.
+      </p>
+    </div>
+
+    <div class="media" data-exp>
+      <div class="inner tex t1" style="height:480px"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CIERRE Y CONTACTO -->
+<section id="contacto"
+         style="text-align:center;min-height:90svh;display:grid;place-items:center">
+  <div class="wrap">
+    <div class="frasco" id="finFrasco">
+      <span class="halo"></span>
+      <div class="tapa"></div>
+      <div class="cuello"></div>
+      <div class="cuerpo"></div>
+    </div>
+
+    <h2 class="titulo reveal" style="margin-top:44px">
+      ¿Cuál será la esencia<br>que cuente tu historia?
+    </h2>
+
+    <div class="cta reveal" style="margin-top:30px">
+      <a class="btn solid" href="#test">Encuentra tu aroma</a>
+      <a class="btn" href="#historia">Descubre ELIXA</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  ELIXA — Perfumería artesanal
+</footer>
+
+<!-- LIBRERÍAS DE ANIMACIÓN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- FUNCIONES DEL CUESTIONARIO Y CATÁLOGO -->
+<script src="script.js"></script>
+
+</body>
+</html>
